@@ -1,0 +1,180 @@
+/*NAVIGATION*/
+.navbar {
+  background-color:transparent;
+  font-family: 'Lato', sans-serif;
+  border: transparent;
+  padding-top: 5px;
+}
+
+.navbar .navbar-collapse{
+  border: transparent;
+}
+
+.navbar a{
+  color:#ccc !important;
+}
+.navbar a:hover{
+  color:#fff !important;
+  background-color: #646464 !important;
+}
+
+.navbar-header .navbar-brand{
+  color: white !important;
+  font-size:1.5em;
+  text-align: center;
+  /*margin-top: px !important;*/
+}
+.navbar-header .navbar-brand p{
+  font-size: 0.8em !important;
+}
+/*HEADER*/
+
+.header{
+  text-align: center;
+  background: url('../img/header-bg.jpeg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.header .container{
+  position: relative !important;
+
+}
+.jumbotron {
+    background:transparent;
+    color:#4fc3f7;
+}
+
+.header .jumbotron{
+    padding:0;
+    margin-bottom:0;
+    min-height:500px;
+}
+
+.jumbotron .left-col,
+.jumbotron .right-col{
+    float:left;
+}
+
+.jumbotron .message-box{
+    width:90%;
+    margin:300px auto 0;
+	  background:#fff;
+    background:rgba(255,255,255,0.9);
+    padding:20px 0;
+}
+
+.jumbotron .left-col{
+	width:35%;
+    text-align:right;
+}
+
+.jumbotron .right-col{
+	width:65%;
+    text-align:left;
+    overflow:hidden;
+    border:none;
+    box-shadow:none;
+    background:transparent;
+    margin:0;
+    padding:0;
+}
+
+.jumbotron .left-col p{
+    display:inline-block;
+    margin:0;
+    padding:18px 5px 12px 30px;
+    font-size:38px;
+    font-weight:300;
+    line-height:48px;
+}
+
+.jumbotron .left-col p span{
+    font-size:42px;
+    font-weight:400;
+}
+
+.jumbotron .right-col p{
+    display:inline-block;
+    margin:0;
+    padding:10px 30px 10px 5px;
+    font-size:110px;
+    line-height:110px;
+    font-weight:900;
+    text-transform:uppercase;
+}
+
+.jumbotron .home-slider .slides li {
+    opacity:0;
+    -webkit-ransition:opacity 0.4s ease-out;
+    transition:opacity 0.4s ease-out;
+}
+
+.no-csstransitions .jumbotron .home-slider .slides li {
+    opacity:1;
+}
+
+.jumbotron .home-slider .slides li.flex-active-slide,
+.jumbotron .home-slider .slides li.clone {
+    opacity:1;
+}
+
+/*WHAT I DO*/
+.about{
+  padding: 90px 0 90px;
+  text-align: center;
+  color: white;
+  background-color: #4fc3f7;
+}
+
+.about h1{
+  padding-bottom: 50px;
+}
+
+.about p{
+  padding-top: 100px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.about img{
+  box-shadow: 10px 0px 0px 10px rgba(255,255,255,0.2), -10px 0px 0px 10px rgba(255,255,255,0.2);
+}
+
+.about .img-responsive{
+  margin: 0 auto;
+}
+
+@media(max-width:768px){
+  .about{
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+  }
+}
+
+/*skills*/
+.skills{
+  padding-top: 35px;
+  text-align: center;
+}
+
+.skills h2{
+  color: #838282;
+}
+
+/*MY WORK*/
+
+.mywork{
+  background-color: #0288D1;
+  padding: 90px 0 90px;
+  text-align: center;
+  color: white;
+}
+
+.mywork img{
+  padding: 20px 0 20px;
+}
+
+.mywork h1{
+  font-size: 2em;
+}

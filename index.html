@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hello (:</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="navbar-brand">
+            LUCIANO BOHRER
+            <p>Software Developer<p>
+          </div>
+
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="container">
+        <div class="jumbotron">
+        <div class="message-box clearfix">
+
+					<div class="left-col">
+						<p>I AM <span>LUCIANO BOHRER</span><br/>and I'm a mobile</p>
+					</div>
+
+					<!-- <div class="right-col flexslider home-slider" style="z-index:1;">
+						<ul class="slides">
+
+							<li><p>Developer</p></li>
+
+							<li><p>Expert</p></li>
+
+						</ul>
+
+					</div><!--End home-slider -->
+
+				</div><!--End message-box -->
+      </div>
+    </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- ABOUT -->
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h1>About Me</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <img class="img-responsive img-circle" src="img/me.jpg" />
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <p>I'm a mobile developer living in <a href="https://goo.gl/maps/bG6gBpU85pw" target="_blank">Porto Alegre, Rio Grande do Sul, Brazil.</a>
+						I have worked with companies like <a href="http://www.getnet.com.br"> Santander Getnet</a>, <a href="http://www.getnet.com.br">Grupo Sabemi</a> and currently as iOS Lead Developer at <a href="http://4all.com">4all Tecnologia.</a><br/>
+						Mobile development is not just a job for me, it's a passion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END ABOUT -->
+
+    <!-- SKILLS -->
+    <div class="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-xs-12">
+              <div id="chart-ios"></div>
+              <h2>iOS Development<h2>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-12">
+            <div id="chart-android"></div>
+            <h2>Android Development<h2>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-12">
+            <div id="chart-web"></div>
+            <h2>Web Development<h2>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-12">
+            <div id="chart-ux"></div>
+            <h2>UX<h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END SKILLS -->
+  <div class="mywork">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h1>TAKE A LOOK</h1>
+            <p>View some of the screenshots from projects I worked!<p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-xs-6">
+          <img class="img-responsive" src="img/screens/profile-home.jpg"/>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6">
+          <img class="img-responsive" src="img/screens/photostream.jpg"/>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6">
+          <img class="img-responsive" src="img/screens/messenger-overview.jpg"/>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6">
+          <img class="img-responsive" src="img/screens/weather.jpg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.circliful.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+    $( document ).ready(function() {
+        $("#chart-ios").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 0,
+            percent: 95
+        });
+        $("#chart-android").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 0,
+            percent: 80
+        });
+        $("#chart-web").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 0,
+            percent: 75
+        });
+        $("#chart-ux").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 0,
+            percent: 50
+        });
+        });
+    </script>
+  </body>
+</html>
