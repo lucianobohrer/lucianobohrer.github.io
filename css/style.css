@@ -1,13 +1,21 @@
+p, h1, h2{
+  font-family: 'Lato', sans-serif;
+}
+
 /*NAVIGATION*/
 .navbar {
   background-color:transparent;
   font-family: 'Lato', sans-serif;
-  border: transparent;
+  border: none;
   padding-top: 5px;
 }
 
 .navbar .navbar-collapse{
-  border: transparent;
+  border-top: none;
+}
+
+.navbar .navbar-collapse .collapse{
+  border-top: none;
 }
 
 .navbar a{
@@ -26,6 +34,19 @@
 }
 .navbar-header .navbar-brand p{
   font-size: 0.8em !important;
+}
+
+@media (max-width:768px) {
+  .navbar .navbar-collapse{
+    border-top: none;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar .navbar-collapse .collapse{
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 /*HEADER*/
 
@@ -154,7 +175,7 @@
 
 /*skills*/
 .skills{
-  padding-top: 35px;
+  padding-top: 25px;
   text-align: center;
 }
 
