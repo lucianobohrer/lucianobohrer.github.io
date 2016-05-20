@@ -1,24 +1,24 @@
 
 $( document ).ready(function() {
-    $("#chart-ios").circliful({
+    var chart1 = $("#chart-ios").circliful({
         animationStep: 5,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 0,
         percent: 95
     });
-    $("#chart-android").circliful({
+    var chart2 = $("#chart-android").circliful({
         animationStep: 5,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 0,
         percent: 80
     });
-    $("#chart-web").circliful({
+    var chart3 = $("#chart-web").circliful({
         animationStep: 5,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 0,
         percent: 75
     });
-    $("#chart-ux").circliful({
+    var chart4 = $("#chart-ux").circliful({
         animationStep: 5,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 0,
@@ -60,20 +60,25 @@ $( document ).ready(function() {
     });
     sr.reveal('.chart1',{
       duration: 1000,
-      delay: 300
+      delay: 300,
+      afterReveal : chart1
     });
 
     sr.reveal('.chart2',{
       duration: 1000,
-      delay: 500
+      delay: 500,
+      afterReveal : chart2
     });
 
     sr.reveal('.chart3',{
       duration: 1000,
-      delay: 700
+      delay: 700,
+      afterReveal : chart3
+
     });
     sr.reveal('.chart4',{
       duration: 1000,
-      delay: 900
+      delay: 900,
+      afterReveal : chart4
     });
 });
