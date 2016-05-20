@@ -32,6 +32,7 @@
       duration: 1000,
       origin: 'left',
       distance: '100px',
+      viewFactor  : 0.4,
       delay:500
     });
 
@@ -39,25 +40,30 @@
       duration: 1000,
       origin: 'right',
       delay: 1000,
+      viewFactor  : 0.4,
       distance: '100px'
     });
 
     sr.reveal('.screen1',{
       duration: 1000,
+      viewFactor  : 0.5,
       delay: 150,
     });
 
     sr.reveal('.screen4',{
       duration: 1000,
+      viewFactor  : 0.5,
       delay: 150
     });
 
     sr.reveal('.screen2',{
       duration: 1000,
+      viewFactor  : 0.5,
       delay: 10
     });
     sr.reveal('.screen3',{
       duration: 1000,
+      viewFactor  : 0.5,
       delay: 10
     });
 
@@ -65,6 +71,7 @@
     sr.reveal('.chart1',{
       duration: 1000,
       delay: 400,
+      viewFactor  : 0.5,
       afterReveal : chart1
 
     });
@@ -72,16 +79,19 @@
     sr.reveal('.chart2',{
       duration: 1000,
       delay: 700,
+      viewFactor  : 0.5,
       afterReset : chart2
     });
 
     sr.reveal('.chart3',{
       duration: 1000,
       delay: 1000,
+      viewFactor  : 0.5,
       afterReset : chart3
     });
     sr.reveal('.chart4',{
       duration: 1000,
+      viewFactor  : 0.5,
       delay: 1300,
       afterReset : chart4
     });

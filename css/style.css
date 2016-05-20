@@ -80,7 +80,7 @@ p, h1, h2{
 .jumbotron .message-box{
     width:90%;
     margin:300px auto 0;
-	  background:#fff;
+    background:transparent !important;
     background:rgba(255,255,255,0.9);
     padding:20px 0;
 }
