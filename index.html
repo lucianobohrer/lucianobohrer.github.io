@@ -11,7 +11,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 
@@ -109,19 +108,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-xs-12">
-              <div id="chart-ios"></div>
+              <div id="chart-ios" class="chart1"></div>
               <h2>iOS Development<h2>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-12">
-            <div id="chart-android"></div>
+            <div id="chart-android" class="chart2"></div>
             <h2>Android Development<h2>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-12">
-            <div id="chart-web"></div>
+            <div id="chart-web" class="chart3"></div>
             <h2>Web Development<h2>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-12">
-            <div id="chart-ux"></div>
+            <div id="chart-ux" class="chart4"></div>
             <h2>UX<h2>
           </div>
         </div>
@@ -141,16 +140,16 @@
 
       <div class="row">
         <div class="col-lg-3 col-md-3 col-xs-6">
-          <img class="img-responsive" src="img/screens/profile-home.jpg"/>
+          <img class="img-responsive screen1" src="img/screens/profile-home.jpg"/>
         </div>
         <div class="col-lg-3 col-md-3 col-xs-6">
-          <img class="img-responsive" src="img/screens/photostream.jpg"/>
+          <img class="img-responsive screen2" src="img/screens/photostream.jpg"/>
         </div>
         <div class="col-lg-3 col-md-3 col-xs-6">
-          <img class="img-responsive" src="img/screens/messenger-overview.jpg"/>
+          <img class="img-responsive screen3" src="img/screens/messenger-overview.jpg"/>
         </div>
         <div class="col-lg-3 col-md-3 col-xs-6">
-          <img class="img-responsive" src="img/screens/weather.jpg"/>
+          <img class="img-responsive screen4" src="img/screens/weather.jpg"/>
         </div>
       </div>
     </div>
@@ -163,49 +162,7 @@
     <script src="js/jquery.circliful.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="js/animations.js"></script>
 
-    <script>
-    $( document ).ready(function() {
-        $("#chart-ios").circliful({
-            animationStep: 5,
-            foregroundBorderWidth: 5,
-            backgroundBorderWidth: 0,
-            percent: 95
-        });
-        $("#chart-android").circliful({
-            animationStep: 5,
-            foregroundBorderWidth: 5,
-            backgroundBorderWidth: 0,
-            percent: 80
-        });
-        $("#chart-web").circliful({
-            animationStep: 5,
-            foregroundBorderWidth: 5,
-            backgroundBorderWidth: 0,
-            percent: 75
-        });
-        $("#chart-ux").circliful({
-            animationStep: 5,
-            foregroundBorderWidth: 5,
-            backgroundBorderWidth: 0,
-            percent: 50
-        });
-        });
-      window.sr = ScrollReveal();
-      sr.container = document.querySelector('.about');
-      sr.reveal('.img-me', {
-        duration: 1000,
-        origin: 'left',
-        distance: '100px'
-      });
-
-      sr.reveal('.text-about', {
-        duration: 1000,
-        origin: 'right',
-        delay: 2,
-        distance: '100px'
-      });
-
-    </script>
   </body>
 </html>
