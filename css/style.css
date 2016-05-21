@@ -21,14 +21,16 @@ html, body {
   padding-top: 5px;
 }
 
-
-.navbar .navbar-collapse{
+.top-nav-collapse{
+  background-color: rgba(0, 0, 0, 0.7);;
+}
+/*.navbar .navbar-collapse{
   border-top: none;
 }
 
 .navbar .navbar-collapse .collapse{
   border-top: none;
-}
+}*/
 
 .navbar a{
   color:#ccc !important;
