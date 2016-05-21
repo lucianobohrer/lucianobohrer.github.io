@@ -1,7 +1,9 @@
 p, h1, h2{
   font-family: 'Raleway', sans-serif;
 }
-
+p{
+  font-size: 1.3em;
+}
 html, body {
     height: 100%;
 }
@@ -59,6 +61,7 @@ html, body {
 /*HEADER*/
 
 .header{
+  color: white;
   text-align: center;
   background: url('../img/header-bg.jpeg') no-repeat center center;
   background-size: cover;
@@ -70,11 +73,34 @@ html, body {
 
 .header .container{
   position: relative !important;
+  height: 100%;
 }
+
+.header .container .row{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header .name{
+  font-family: 'Rancho', cursive;
+  font-size: 2em;
+}
+.header h1{
+  font-size: 4em;
+}
+
+.header #iam, #ido{
+  color: #0088CC;
+}
+
+
+.align-middle {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
 
 /*WHAT I DO*/
 .about{
-  padding: 90px 0 90px;
+  padding: 70px 0 90px;
   text-align: center;
   color: white;
   background-color: #0f1629;
@@ -107,7 +133,7 @@ html, body {
 
 /*skills*/
 .skills{
-  padding-top: 25px;
+  padding: 90px 0 90px;
   text-align: center;
 }
 
@@ -130,4 +156,34 @@ html, body {
 
 .mywork h1{
   font-size: 2em;
+}
+
+/*CONTACT*/
+.contact{
+  padding: 70px 0 90px;
+  text-align: center;
+}
+
+.contact h1{
+  padding-bottom: 40px;
+}
+
+.contact p{
+  padding-bottom: 40px;
+}
+
+.contact .fa{
+  color: #192645;
+}
+
+.contact .fa:hover{
+  color: #0f1629;
+}
+
+/*FOOTER*/
+.footer{
+  background-color: #0f1629;
+  padding: 70px 0 70px;
+  text-align: center;
+  color: white;
 }
