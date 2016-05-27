@@ -59,6 +59,7 @@ html, body {
   color: white;
   text-align: center;
   background: url('../img/header-bg.jpeg') no-repeat center center;
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   -webkit-box-shadow: inset 1px -29px 13px -17px rgba(15,22,41,1);
